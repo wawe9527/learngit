@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100;
+    font-size: 62.5%;
+    background-color: white;
+}
+.top-wrap {
+    position: relative;
+    height: 65px;
+    width: 100%;
+    background-color: rgb(95, 192, 205);
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.top-wrap .jt-icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.top-wrap .hom-pag-text {
+    line-height: 65px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: white;
+}
+.bg-wrap {
+    height: 220px;
+    width: 100%;
+    line-height: 220px;
+    background: url("./img/bg.png") no-repeat;
+    background-size: cover;
+}
+.bg-wrap .cont-wrap {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    /* border: 1px solid black; */
+    vertical-align: middle;
+}
+.bg-wrap .cont-wrap .phot-wrap {
+    display: inline-block;
+    position: absolute;
+    margin-left: 30px;
+    width: 100px;
+    height:100px;
+    background: url("./img/photo.png")no-repeat;
+    background-size: 100px 100px;
+}
+.bg-wrap .cont-text {
+    float: left;
+    margin-top: 20px;
+    margin-left: 155px;
+    line-height: 25px;
+}
+.bg-wrap .cont-text p.pe-name {
+    font-size: 1.05rem;
+    color: white;
+}
+.bg-wrap .cont-text p.pe-adre {
+    color: white;
+    font-size: 0.95rem;
+}
+.bg-wrap .cont-text p.pe-adre .adre-icon {
+    display: inline-block;
+    width: 13px;
+    height: 16px;
+    background: url("./img/location.png")no-repeat;
+    background-size: 13px 16px;
+    margin-right: 10px;
+}
+.bg-wrap .cont-text p.pe-adre .point-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+
+.par-intr-wrap {
+    width:100%;
+}
+.par-intr-wrap .text-box {
+    height: 65px;
+    width: 100%;
+    line-height: 65px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    font-size: 0.9rem;
+}
+
+.maj-ski p span.cut-line-bu {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 7px;
+    width: 3px;
+    height: 15px;
+    background: url("./img/cloumn.png")no-repeat;
+    background-size: 3px 15px;
+    vertical-align: sub;
+}
+.par-intr-wrap .liv-bar .star-icon {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    background: url("./img/star.png")no-repeat;
+    background-size: 16px 16px;
+    vertical-align: sub;
+}
+ span.lig-cor-text {
+    font-size: 0.9rem;
+    color: rgb(175, 175, 175);
+    margin-left: 20px;
+}
+ .cut-line {
+    display: inline-block;
+    margin: 0 8px;
+    width: 5px;
+    height: 25px;
+    background: url("./img/cut-line.png")no-repeat;
+    background-size: 5px 25px;
+    vertical-align: middle;
+}
+.sel-ins {
+    position: relative;
+    padding: 15px 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.sel-ins .flo-lef{
+    position: absolute;
+    height:26px;
+    width: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sel-ins .lon-text {
+    display: inline-block;
+    line-height: 20px;
+    font-size: 0.9rem;
+    margin-left: 100px;
+}
+
+
+
+.contact {
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    width: 100%;
+    padding: 0 5px;
+    justify-content: space-around;
+}
+.contact .butt-box {
+    margin-top: 10px;
+    text-align: center;
+    margin: 0 6px;
+    width: 50%;
+    border-radius: 6px;
+}
+.contact span {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+.contact .liv-mess {
+    border: 2px solid rgb(95, 192, 205);
+    color: rgb(95, 192, 205);
+}
+.contact .call-pho {
+    background-color: rgb(95, 192, 205);
+    color: white;
+}
