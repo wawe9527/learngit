@@ -12,13 +12,23 @@ body {
     background-color: white;
 }
 .top-wrap {
-    position: relative;
+    position: fixed;
+    top: 0;
     height: 65px;
     width: 100%;
     background-color: rgb(95, 192, 205);
-    /* border: 1px solid red; */
     text-align: center;
 }
+
+.mian {
+    width: 100%;
+    margin-top: 65px;
+    overflow: scroll;
+    height: 700px;
+    /* border: 1px solid red; */
+}
+
+
 .top-wrap .jt-icon {
     position: absolute;
     height: 20px;
@@ -43,6 +53,7 @@ body {
 }
 .bg-wrap .cont-wrap {
     display: inline-block;
+    position: relative;
     width: 100%;
     height: 100px;
     line-height: 100px;
@@ -59,7 +70,7 @@ body {
     background-size: 100px 100px;
 }
 .bg-wrap .cont-text {
-    float: left;
+    position: absolute;
     margin-top: 20px;
     margin-left: 155px;
     line-height: 25px;
@@ -161,11 +172,12 @@ body {
 
 .contact {
     position: fixed;
-    bottom: 10px;
+    bottom: 0;
     display: flex;
     width: 100%;
-    padding: 0 5px;
+    padding: 10px 5px;
     justify-content: space-around;
+    background-color: white;
 }
 .contact .butt-box {
     margin-top: 10px;
