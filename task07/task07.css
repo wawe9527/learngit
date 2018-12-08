@@ -1,0 +1,126 @@
+
+
+body {
+    background-color: rgb(240,240,240);
+}
+.headed {
+    background-color: rgb(75, 208, 238);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.headed .drop-menu{
+    margin-left: 10px;
+    width: 25px;
+    height: 20px;
+    background: repeating-linear-gradient(180deg,white,white 16%,rgb(41, 189, 224) 16%,rgb(41, 189, 224) 40%);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main .btn-box {
+    width: 90%;
+    margin-top: 25px;
+}
+.main .btn-box .btn {
+    position: relative;
+    background-color: white;
+    color: rgb(173, 173, 173);
+    font-size: 1.5rem;
+    line-height: 80px;
+    border-radius: 0px;
+    border:1px solid  rgb(214, 214, 214);
+}
+.main .btn-box .icon-btn {
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    /* border: 1px solid red; */
+    background: url("./img/icon.png") -8px 0;
+    background-size: auto 100%;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main .cont {
+    width: 90%;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+    position: relative;
+}
+
+.main .cont .pageup-icon {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-30%);
+}
+
+.main .cont .game-head {
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid rgb(251, 180, 53);
+    text-align: center;
+    line-height: 75px;
+}
+.main .cont .game-head P {
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: rgb(251, 180, 53);
+    padding: 20px auto;
+}
+.main .cont .version-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .cont .version-box .ver-box {
+    width: 80%;
+    margin-top: 20px;
+    padding: 35px;
+    background-color: rgb(75, 208, 238);
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.main .cont .version-box .user-num {
+    font-size: 1.1rem;
+    color: rgb(139, 139, 139);
+    padding-top: 14px;
+    margin-bottom: -7px;
+}
+.main .cont .version-box .foot-box {
+    margin: 15px 0;
+    height: 13px;
+    width: 100%;
+    text-align: center;
+}
+.main .cont .version-box .foot-box ul {
+    margin-left: -30px;
+    display: inline-block;
+    list-style-type: none;
+}
+.main .cont .version-box ul li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(240,240,240);
+    border-radius: 50%;
+    margin-right: 8px;
+
+}
+.main .cont .version-box ul li.selected {
+    background-color: rgb(75, 208, 238);
+}
+
+

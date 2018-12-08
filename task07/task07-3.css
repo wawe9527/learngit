@@ -1,0 +1,127 @@
+body {
+    /* background-color: rgb(75, 208, 238); */
+    /* font-size: 62.5%; */
+    min-width: 340px;
+    overflow-x: hidden;
+}
+.fix-head {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(68, 207, 238); 
+    z-index: 5;
+}
+.headed {
+    padding: 0 25px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(220, 249, 255);
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    background: url("./img/icon.png")no-repeat;
+}
+.headed .left-icon {
+    background-position: -190px 0;
+    background-size: auto 100%;
+}
+.headed .right-icon {
+    background-position: -240px 0;
+    background-size: auto 100%;
+}
+.headed .midd-text {
+    color: white;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+
+
+.result-box .cont-box {
+    width: 80%;
+    height: 440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result-box .cont-box .gold-medal {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.result-box .cont-box .great {
+    color: rgb(255, 200, 100);
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}
+.everyday-box {
+    margin-top: 530px;
+    margin-bottom: 100px;
+    background-color: white;
+}
+
+.everyday-box .cont-box{
+    padding: 7px 10%;
+    background-color: white;
+    height: 130px;
+    border-bottom: 1px solid rgb(158, 158, 158);
+}
+.everyday-box .cont-box .date {
+    position: relative;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.everyday-box .cont-box .date .long {
+    position: absolute;
+    font-size: 1rem;
+    color: rgb(209, 209, 209);
+    right: 15px;
+}
+.everyday-box .cont-box .pass {
+    font-size: 1.1rem;
+    color: rgb(173, 173, 173);
+    margin: 5px 0;
+}
+
+
+.result-box .cont-box .game-data {
+    align-self: flex-start;
+}
+.result-box .cont-box .game-data p{
+    color: rgba(255, 255, 255,0.8);
+    font-size: 1.1rem;
+    /* line-height: 10px; */
+    margin-bottom: 1px;
+}
+.again-box {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    height: 90px;
+    background-color: rgba(75, 208, 238,0.5);
+    z-index: 5;
+}
+.again-box button {
+    width: 42%;
+    height: 60px;
+    /* outline: none; */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.again-box .btn-again {
+    background-color: rgb(246, 111, 111);
+}
+.again-box .btn-upload {
+    background-color: rgb(251, 180, 53);
+}
