@@ -115,13 +115,20 @@ body {
     /* outline: none; */
     border: none;
     border-radius: 10px;
-    color: white;
-    font-size: 1.6rem;
-    font-weight: 300;
+    
 }
 .again-box .btn-again {
     background-color: rgb(246, 111, 111);
 }
 .again-box .btn-upload {
     background-color: rgb(251, 180, 53);
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.again-box button a {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 300;
 }
