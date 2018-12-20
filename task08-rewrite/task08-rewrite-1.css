@@ -115,7 +115,7 @@
      font-size: 1rem;
      color: white;
      margin-left: 1.2rem;
-     padding: 1.5rem 0.5rem;
+     padding: 1.7rem 0.5rem;
  }
 
  header .navigation .nav-item a:hover {
@@ -133,6 +133,10 @@
 
 
  /* 导航收缩按钮 */
+ header>.navigation>.cont-wrap .navbar-toggler {
+     outline: none;
+     border: none;
+ }
 
  .navbar-dark .navbar-toggler-icon {
      background: url("./img/menu.png")no-repeat;
