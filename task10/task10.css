@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-size: 10px;
+}
+
+.cont-wrap {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(29, 122, 217);
+    color: white;
+}
+
+
+header>.cont-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 头部登陆/注册 */
+header .cont-wrap .btn-wrap {
+    display: flex;
+    width: 6rem;
+    height: 1.5rem;
+}
+
+header>.cont-wrap .hotline {
+    color: white;
+    margin: 0;
+}
+
+header .cont-wrap .btn-wrap button {
+    border: none;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(29, 122, 217);
+}
+
+header .cont-wrap .btn-wrap .login {
+    flex: 1;
+    color: white;
+    background-color: rgb(29, 122, 217);
+}
+
+header .cont-wrap .btn-wrap .register {
+    flex: 2;
+    background-color: white;
+}
+
+/* 导航按钮 */
+header .navigation {
+    background-color: rgb(249, 249, 249);
+}
+
+header .navigation .cont-wrap {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+header .navigation input {
+    background-color: white;
+    border: transparent;
+    margin: 0 0 1rem 2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 4px;
+}
+
+header .navigation input.active {
+    background-color: rgb(29, 122, 217);
+    color: white;
+}
+
+/* 流程图 */
+
+main .flowPath {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+main .flowPath .process .pro-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .flowPath .process .phot-box {
+    display: flex;
+    align-items: center;
+}
+
+main .flowPath .process .pro-box p {
+    color: rgb(204, 204, 204);
+    margin-top: 0.8rem;
+    font-weight: 600;
+}
+
+main .flowPath .process span {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+main .flowPath .process span.line {
+    width: 40px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: rgb(204, 204, 204);
+}
+
+main .flowPath .process span.curcle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: rgb(204, 204, 204);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 程序1橙色 */
+main>.cont-wrap>.flowPath>.process>.pro-box>.phot-box>span.active {
+    background-color: rgb(255, 127, 2);
+}
+
+main>.cont-wrap>.flowPath>.process>.pro-box>p.active {
+    color: rgb(255, 127, 2);
+}
+
+
+/* 定制纸箱具体步骤 */
+
+main .cont-wrap .reminder P {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+main .cont-wrap .reminder P span {
+    vertical-align: baseline;
+    margin-right: 3px;
+    color: rgb(29, 122, 217);
+    font-weight: 900;
+}
+
+
+/* 耦合属性 */
+.cont-box .cont {
+    display: flex;
+    position: relative;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(251, 252, 255);
+    padding: 0.6rem 7rem 0.6rem 2rem;
+}
+
+.cont-box .cont select {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cont-box .radio-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.cont-box .radio-box .custom-control .custom-control-label {
+    margin-top: 2px;
+}
+
+.cont-box select {
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    color: rgb(126, 126, 126);
+    padding: 2px 23px 2px 5px;
+    background-color: white;
+    border: 1px solid rgb(218, 218, 218);
+    background: url("./img/select.png")no-repeat scroll right center;
+    background-size: auto 18px;
+}
+
+
+
+
+/* 选择箱型标题 */
+.cont-box .title {
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+}
+
+.cont-box .title .cont-text {
+     color: rgb(29, 122, 217);
+}
+
+.cont-box .title .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background: url("./img/icon.png")no-repeat;
+    background-size: auto 16px;
+}
+
+.cont-box .title .size-icon {
+    background-position: -16px 0;
+}
+
+.cont-box .title .texture-icon {
+    background-position: -32px 0;
+}
+
+/* 选择箱型 */
+
+
+.cont-box .cont .radio-box label {
+    margin: 0 3rem 1rem 0.5rem;
+    color: rgb(119, 119, 119);
+}
+
+@media all and (max-width: 320px) {
+    .cont-box .cont .radio-box label {
+        margin-right: 0;
+    }
+}
+
+/* 确定尺寸 */
+
+.cont-box .cont .radio-box .text-input-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+.cont-box .cont .radio-box .text-input-wrap .text-box {
+    width: 7rem;
+    margin-bottom: 0.5rem;
+    /* border: 1px solid green; */
+}
+
+.cont-box .cont .radio-box .text-box input {
+    width: 3rem;
+    background-color: transparent;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+/* 选择材质 */
+.cont-wrap .cont-box .texture-wrap {
+    padding: 2rem 4rem 2rem 2rem;
+}
+
+/* 下一步 */
+.cont-wrap .cont-box .next {
+    border: 1px solid rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+}
+
+.cont-wrap .cont-box .next input {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    border: transparent;
+    padding: 0.2rem 2rem;
+    border-radius: 5px;
+    background-color: rgb(225, 80, 83);
+}
+
+
+
+
+/* 版权号 */
+footer .aboutUs {
+    background-color: rgb(249, 249, 249);
+    margin-top: 2.5rem;
+    padding: 2rem 0 2rem 0;
+}
+
+footer .aboutUs .cont-wrap>div:first-child {
+    padding-left: 0;
+}
+
+footer .aboutUs .cont-wrap>div:last-child {
+    padding-right: 0;
+}
+
+footer .aboutUs .cont-wrap p,
+a,
+span {
+    color: rgb(170, 170, 170);
+    margin-bottom: 0.4rem;
+}
+
+footer .aboutUs .cont-wrap span.big-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer .aboutUs .cont-wrap .big-text-box {
+    margin-bottom: 1rem;
+}
+
+footer .aboutUs .cont-wrap .usWeb {
+    margin-bottom: 0.5rem;
+}
+
+footer .aboutUs .cont-wrap .usWeb a {
+    display: inline-block;
+    font-size: 0.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+footer .aboutUs .cont-wrap .QR-code-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .aboutUs .cont-wrap a:hover {
+    color: rgb(29, 122, 217);
+}
+
+@media all and (max-width: 768px) {
+    footer .aboutUs .cont-wrap .QR-code-box {
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+}
+
+@media all and (max-width: 575px) {
+    footer .aboutUs .cont-wrap .about-us {
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+footer .copyright {
+    background-color: rgb(29, 122, 217);
+    text-align: center;
+}
+
+footer .copyright p {
+    color: white;
+    font-size: 0.5rem;
+    padding: 3px 0;
+    margin: 0;
+}

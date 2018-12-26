@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="task10.css">
+    <title>Task10</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- 头部登陆/注册 -->
+        <div class="cont-wrap">
+            <span class="hotline">
+                客服热线:010-594-78634
+            </span>
+            <div class="btn-wrap">
+                <button class="login">登陆</button>
+                <button class="register">注册</button>
+            </div>
+        </div>
+
+        <!-- 导航按钮 -->
+        <div class="navigation">
+            <div class="cont-wrap">
+                <input class="active" type="button" value="首页">
+                <input type="button" value="在线定制">
+                <input type="button" value="标准箱">
+                <input type="button" value="品质保障">
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="cont-wrap">
+
+            <!-- 流程 -->
+            <div class="flowPath">
+                <div class="process">
+                    <div class="pro-box">
+                        <div class="phot-box">
+                            <span class="line active"></span>
+                            <span class="curcle active">
+                                1
+                            </span>
+                            <span class="line active"></span>
+                        </div>
+                        <p class="active">1.定制纸箱</p>
+                    </div>
+                </div>
+                <div class="process">
+                    <div class="pro-box">
+                        <div class="phot-box">
+                            <span class="line"></span>
+                            <span class="curcle">
+                                2
+                            </span>
+                            <span class="line"></span>
+                        </div>
+                        <p>2.选择数量</p>
+                    </div>
+                </div>
+                <div class="process">
+                    <div class="pro-box">
+                        <div class="phot-box">
+                            <span class="line"></span>
+                            <span class="curcle">
+                                3
+                            </span>
+                            <span class="line"></span>
+                        </div>
+                        <p>3.上传附件</p>
+                    </div>
+                </div>
+                <div class="process">
+                    <div class="pro-box">
+                        <div class="phot-box">
+                            <span class="line"></span>
+                            <span class="curcle">
+                                4
+                            </span>
+                            <span class="line"></span>
+                        </div>
+                        <p>4.确认下单</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 操作步骤 -->
+            <div class="reminder">
+                <p><span>|</span>请您按照以下步骤来定制您的纸箱</p>
+            </div>
+            <div class="cont-box">
+                <form action="" method="POST">
+                    <!-- 选择箱型 -->
+                    <!-- 标题 -->
+                    <div class="title style-box">
+                        <span class="icon"></span>
+                        <span class="cont-text"> 选择箱型</span>
+                    </div>
+                    <!-- 选择部分 -->
+                    <div class="cont style-cont">
+                        <div class="radio-box">
+                            <div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio" name="example1">
+                                    <label class="custom-control-label" for="customRadio">对口箱</label>
+                                </div>
+                                <!-- <input type="radio" name="box-style" id="box-style-1" value="对口箱">
+                                <label for="box-style-1">对口箱</label> -->
+                            </div>
+                            <div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio1" name="example1">
+                                    <label class="custom-control-label" for="customRadio1">飞机盒</label>
+                                </div>
+                                <!-- <input type="radio" name="box-style" id="box-style-2" value="飞机盒">
+                                <label for="box-style-2">飞机盒</label> -->
+                            </div>
+                            <div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio2" name="example1">
+                                    <label class="custom-control-label" for="customRadio2">天地盖</label>
+                                </div>
+                                <!-- <input type="radio" name="box-style" id="box-style-3" value="天地盖">
+                                <label for="box-style-3">天地盖</label> -->
+                            </div>
+                        </div>
+                        <select name="particulars" id="">
+                            <option value="particular">查看详情</option>
+                            <option value="particular">查看详情</option>
+                            <option value="particular">查看详情</option>
+                            <option value="particular">查看详情</option>
+                        </select>
+                    </div>
+
+
+                    <!-- 确定尺寸 -->
+                    <!-- 标题 -->
+                    <div class="title size-box">
+                        <span class="icon size-icon"></span>
+                        <span class="cont-text"> 确定尺寸</span>
+                    </div>
+                    <!-- 选择部分 -->
+                    <div class="cont size-cont">
+                        <div>
+                            <!-- 外径 -->
+                            <div class="radio-box">
+                                <div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="customRadio3" name="example1">
+                                        <label class="custom-control-label" for="customRadio3">外径</label>
+                                    </div>
+                                    <!-- <input type="radio" name="box-size" id="box-size-1" value="对口箱">
+                                    <label for="box-size-1">外径</label> -->
+                                </div>
+                                <div class="text-input-wrap">
+                                    <div class="text-box">
+                                        <span>长</span>
+                                        <input type="text" name="length" maxlength="6" value="">
+                                        <span>mm</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <span>宽</span>
+                                        <input type="text" name="length" maxlength="6" value="">
+                                        <span>mm</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <span>高</span>
+                                        <input type="text" name="length" maxlength="6" value="">
+                                        <span>mm</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- 内径 -->
+                            <div class="radio-box ">
+                                <div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="customRadio4" name="example1">
+                                        <label class="custom-control-label" for="customRadio4">内径</label>
+                                    </div>
+                                    <!-- <input type="radio" name="box-size" id="box-size-2" value="对口箱">
+                                    <label for="box-size-2">内径</label> -->
+                                </div>
+                                <div class="text-input-wrap">
+                                    <div class="text-box">
+                                        <span>长</span>
+                                        <input type="text" name="length" maxlength="6" value="">
+                                        <span>mm</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <span>宽</span>
+                                        <input type="text" name="length" maxlength="6" value="">
+                                        <span>mm</span>
+                                    </div>
+                                    <div class="text-box">
+                                        <span>高</span>
+                                        <input type="text" name="length" maxlength="6" value="">
+                                        <span>mm</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <select name="particulars" id="">
+                            <option value="particular">查看详情</option>
+                            <option value="particular">查看详情</option>
+                            <option value="particular">查看详情</option>
+                            <option value="particular">查看详情</option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- 选择材质 -->
+                    <!-- 标题 -->
+                    <div class="title texture-box">
+                        <span class="icon texture-icon"></span>
+                        <span class="cont-text"> 选择箱型</span>
+                    </div>
+                    <!-- 选择部分 -->
+                    <div class="cont texture-wrap">
+                        <div class="radio-box">
+                            <div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio5" name="example1">
+                                    <label class="custom-control-label" for="customRadio5">三层A瓦优质</label>
+                                </div>
+                                <!-- <input type="radio" name="box-texture" id="box-texture-1" value="对口箱">
+                                <label for="box-texture-1">三层A瓦优质</label> -->
+                            </div>
+                            <div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio6" name="example1">
+                                    <label class="custom-control-label" for="customRadio6">三层A瓦优质</label>
+                                </div>
+                                <!-- <input type="radio" name="box-texture" id="box-texture-2" value="飞机盒">
+                                <label for="box-texture-2">三层A瓦优质</label> -->
+                            </div>
+                            <div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio7" name="example1">
+                                    <label class="custom-control-label" for="customRadio7">三层A瓦优质</label>
+                                </div>
+                                <!-- <input type="radio" name="box-texture" id="box-texture-3" value="天地盖">
+                                <label for="box-texture-3">三层A瓦优质</label> -->
+                            </div>
+                            <div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio8" name="example1">
+                                    <label class="custom-control-label" for="customRadio8">三层A瓦优质</label>
+                                </div>
+                                <!-- <input type="radio" name="box-texture" id="box-texture-4" value="飞机盒">
+                                <label for="box-texture-4">三层A瓦优质</label> -->
+                            </div>
+                            <div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio9" name="example1">
+                                    <label class="custom-control-label" for="customRadio9">三层A瓦优质</label>
+                                </div>
+                                <!-- <input type="radio" name="box-texture" id="box-texture-5" value="天地盖">
+                                <label for="box-texture-5">三层A瓦优质</label> -->
+                            </div>
+                        </div>
+                        <select name="particulars" id="">
+                            <option value="particular">查看详情</option>
+                            <option value="particular">查看详情</option>
+                            <option value="particular">查看详情</option>
+                            <option value="particular">查看详情</option>
+                        </select>
+                    </div>
+
+                    <!-- 下一步 -->
+                    <div class="next">
+                        <input type="button" class="next-btn" value="下一步">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <!-- 关于我们 -->
+        <div class="aboutUs">
+            <div class="row cont-wrap">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-xl-4 big-text-box">
+                    <span class="big-text">
+                        51包装网— 纸箱包装首选服务平台
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-xl-4 about-us">
+                    <div class="usWeb">
+                        <a href="">关于我们</a>
+                        <a href="">配送流程</a>
+                        <a href="">联系我们</a>
+                    </div>
+                    <div class="usWeb">
+                        <a href="">下单指南</a>
+                        <a href="">媒体介绍</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-xl-4 QR-code-box">
+                    <div class="QR-code">
+                        <p>TEL:400-0000-000</p>
+                        <p>企业QQ：123456789</p>
+                        <p>微信号：XXXXXXX</p>
+                    </div>
+                    <img src="./img/QR-code.png" width="75px" height="75px" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 版权号 -->
+        <div class="copyright">
+            <div class="cont-wrap">
+                <p>北京五一包装科技有限公司Copyright ©2015 &nbsp;&nbsp;&nbsp;&nbsp;51baozhuang.com015 All
+                    &nbsp;&nbsp;&nbsp;rights
+                    reserved. &nbsp;&nbsp;&nbsp;京icp备99999999-1 </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
