@@ -19,18 +19,55 @@
                 客服热线:010-594-78634
             </span>
             <div class="btn-wrap">
-                <button class="login">登陆</button>
-                <button class="register">注册</button>
+                <button id="login">登陆</button>
+                <button id="register">注册</button>
+                <script>
+                    var logBtn = document.getElementById("login");
+                    var regBtn = document.getElementById("register");
+                    
+                        logBtn.onclick = function () {
+                            this.style.backgroundColor = "white";
+                            this.style.color = "black";
+                            this.style.width = "4rem";
+                            regBtn.style.backgroundColor = "rgb(29, 122, 217)";
+                            regBtn.style.color = "white";
+                            regBtn.style.width = "2rem";
+                            }
+
+                        regBtn.onclick = function () {
+                            this.style.backgroundColor = "white";
+                            this.style.color = "black";
+                            this.style.width = "4rem";
+                            logBtn.style.backgroundColor = "rgb(29, 122, 217)";
+                            logBtn.style.color = "white";
+                            logBtn.style.width = "2rem";
+                            }
+                           
+                     
+                    </script>
             </div>
         </div>
 
         <!-- 导航按钮 -->
         <div class="navigation">
             <div class="cont-wrap">
-                <input class="active" type="button" value="首页">
-                <input type="button" value="在线定制">
-                <input type="button" value="标准箱">
-                <input type="button" value="品质保障">
+                <input class="active0" type="button" value="首页">
+                <input class="active0" type="button" value="在线定制" style="background-color: rgb(29, 122, 217); color: white;">
+                <input class="active0" type="button" value="标准箱">
+                <input class="active0" type="button" value="品质保障">
+                <script>
+                    var btn = document.getElementsByClassName("active0");
+                            for (var j = 0; j < btn.length; j++) {
+                                btn[j].onclick = function () {
+                                    for (var i = 0; i < btn.length; i++) {
+                                        btn[i].style.backgroundColor = "white";
+                                        btn[i].style.color = "black";
+                                    }
+                                    this.style.backgroundColor = "rgb(29, 122, 217)";
+                                    this.style.color = "white";
+                                }
+                            }
+                </script>
             </div>
         </div>
     </header>
@@ -48,9 +85,8 @@
                             <span class="curcle active">
                                 1
                             </span>
-                            <span class="line active"></span>
                         </div>
-                        <p class="active">1.定制纸箱</p>
+                        <p class="p-cont active">1.定制纸箱</p>
                     </div>
                 </div>
                 <div class="process">
@@ -60,9 +96,8 @@
                             <span class="curcle">
                                 2
                             </span>
-                            <span class="line"></span>
                         </div>
-                        <p>2.选择数量</p>
+                        <p class="p-cont">2.选择数量</p>
                     </div>
                 </div>
                 <div class="process">
@@ -72,9 +107,8 @@
                             <span class="curcle">
                                 3
                             </span>
-                            <span class="line"></span>
                         </div>
-                        <p>3.上传附件</p>
+                        <p class="p-cont">3.上传附件</p>
                     </div>
                 </div>
                 <div class="process">
@@ -84,11 +118,61 @@
                             <span class="curcle">
                                 4
                             </span>
-                            <span class="line"></span>
                         </div>
-                        <p>4.确认下单</p>
+                        <p class="p-cont">4.确认下单</p>
                     </div>
                 </div>
+                <script>
+                    var aPro = document.getElementsByClassName("pro-box");
+                    var aCur = document.getElementsByClassName("curcle");
+                    var aLin = document.getElementsByClassName("line");
+                    var aPcon= document.getElementsByClassName("p-cont");
+                    function ora(n) {
+                        var m = n;
+                        aCur[m].style.backgroundColor = "rgb(255, 127, 2)";
+                        aLin[m].style.backgroundColor = "rgb(255, 127, 2)";
+                        aPcon[m].style.color = "rgb(255, 127, 2)";
+                    }
+
+                    ora(0);
+
+                    function gra(n) {
+                        var m = n;
+                        aCur[m].style.backgroundColor = "rgb(204, 204, 204)";
+                        aLin[m].style.backgroundColor = "rgb(204, 204, 204)";
+                        aPcon[m].style.color = "rgb(204, 204, 204)";
+                    }
+                    
+                
+                    aPro[0].onclick = function() {
+                        ora(0);
+                        gra(1);
+                        gra(2);
+                        gra(3);
+                    }
+                    aPro[1].onclick = function() {
+                        ora(0);
+                        ora(1);
+                        gra(2);
+                        gra(3);
+                    }
+                    aPro[2].onclick = function() {
+                        ora(0);
+                        ora(1);
+                        ora(2);
+                        gra(3);
+                    }
+                    aPro[3].onclick = function() {
+                        ora(0);
+                        ora(1);
+                        ora(2);
+                        ora(3);
+                    }
+                </script>
+
+
+
+
             </div>
 
             <!-- 操作步骤 -->
@@ -153,7 +237,7 @@
                             <div class="radio-box">
                                 <div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="customRadio3" name="example1">
+                                        <input type="radio" class="custom-control-input" id="customRadio3" name="example2">
                                         <label class="custom-control-label" for="customRadio3">外径</label>
                                     </div>
                                     <!-- <input type="radio" name="box-size" id="box-size-1" value="对口箱">
@@ -183,7 +267,7 @@
                             <div class="radio-box ">
                                 <div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="customRadio4" name="example1">
+                                        <input type="radio" class="custom-control-input" id="customRadio4" name="example3">
                                         <label class="custom-control-label" for="customRadio4">内径</label>
                                     </div>
                                     <!-- <input type="radio" name="box-size" id="box-size-2" value="对口箱">
@@ -231,7 +315,7 @@
                         <div class="radio-box">
                             <div>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="customRadio5" name="example1">
+                                    <input type="radio" class="custom-control-input" id="customRadio5" name="example4">
                                     <label class="custom-control-label" for="customRadio5">三层A瓦优质</label>
                                 </div>
                                 <!-- <input type="radio" name="box-texture" id="box-texture-1" value="对口箱">
@@ -239,7 +323,7 @@
                             </div>
                             <div>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="customRadio6" name="example1">
+                                    <input type="radio" class="custom-control-input" id="customRadio6" name="example4">
                                     <label class="custom-control-label" for="customRadio6">三层A瓦优质</label>
                                 </div>
                                 <!-- <input type="radio" name="box-texture" id="box-texture-2" value="飞机盒">
@@ -247,7 +331,7 @@
                             </div>
                             <div>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="customRadio7" name="example1">
+                                    <input type="radio" class="custom-control-input" id="customRadio7" name="example4">
                                     <label class="custom-control-label" for="customRadio7">三层A瓦优质</label>
                                 </div>
                                 <!-- <input type="radio" name="box-texture" id="box-texture-3" value="天地盖">
@@ -255,7 +339,7 @@
                             </div>
                             <div>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="customRadio8" name="example1">
+                                    <input type="radio" class="custom-control-input" id="customRadio8" name="example4">
                                     <label class="custom-control-label" for="customRadio8">三层A瓦优质</label>
                                 </div>
                                 <!-- <input type="radio" name="box-texture" id="box-texture-4" value="飞机盒">
@@ -263,7 +347,7 @@
                             </div>
                             <div>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="customRadio9" name="example1">
+                                    <input type="radio" class="custom-control-input" id="customRadio9" name="example4">
                                     <label class="custom-control-label" for="customRadio9">三层A瓦优质</label>
                                 </div>
                                 <!-- <input type="radio" name="box-texture" id="box-texture-5" value="天地盖">
